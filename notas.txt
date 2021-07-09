@@ -1,0 +1,13 @@
+Create Multi-Module Maven Project
+
+	ShopmeProjext - root project (pom)
+	
+		ShopmeCommon - module 1 (jar)
+		
+		ShopmeWebParent - module 2 (pom)
+		
+			ShopmeBackEnd  - module 2a (jar)
+			
+			ShopmeFrontEnd - module 2b (jar)
+			
+			
