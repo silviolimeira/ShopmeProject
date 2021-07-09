@@ -1,4 +1,4 @@
-package com.shopme;
+package com.shopme.common.entity;
 
 public class Util {
 
