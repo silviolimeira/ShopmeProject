@@ -11,3 +11,17 @@ Create Multi-Module Maven Project
 			ShopmeFrontEnd - module 2b (jar)
 			
 			
+			
+Application Architecture (Logical Layers)
+
+View (Thymeleaf, HTML...)	> products.html, product_form.html
+
+Controller (MVC, REST)		> ProductController
+
+Service (business classes)  > ProductService
+
+Repository (Entities & Interfaces) > Product, ProductRepository
+
+Spring Data JPA
+
+Hibernate framework <---> JDBC Driver <---> Database
