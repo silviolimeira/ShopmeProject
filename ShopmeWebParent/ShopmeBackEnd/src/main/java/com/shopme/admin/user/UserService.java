@@ -21,7 +21,7 @@ public class UserService {
 
 	@Autowired
 	private PasswordEncoder passwordEncoder;
-	
+
 	public List<User> listAll() {
 
 		return (List<User>) userRepo.findAll();
@@ -40,5 +40,12 @@ public class UserService {
 		String encodedPassword = passwordEncoder.encode(user.getPassword());
 		user.setPassword(encodedPassword);
 	}
-	
+
+	public Boolean isEmailUnique(String email) {
+		User userByEmail = userRepo.getUserByEmail(email);
+
+		return userByEmail == null;
+
+	}
+
 }
